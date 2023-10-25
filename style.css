@@ -26,6 +26,10 @@
 
 /* general styles */
 
+html {
+    scroll-behavior: smooth;
+}
+
 @media (min-width: 800px) {
     :root {
         --fs-h1: 4.5rem;
@@ -175,7 +179,7 @@ h3 {
 .nav-link {
     color: inherit;
     font-weight: var(--fw-bold);
-    font-size: var(--fs-h3);
+    font-size: var(--fs-h2);
     text-decoration: none;
 }
 
@@ -193,6 +197,28 @@ h3 {
     right: 1em;
     top: 1em;
     z-index: 1000;
+}
+
+.nav-open .nav {
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+    background: var(--clr-accent);
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+    background: var(--clr-accent);
+}
+
+.nav-open .hamburger::after {
+    opacity: 0;
 }
 
 .hamburger {
@@ -242,6 +268,7 @@ h3 {
         width: min-content;
         margin: 0 auto;
         grid-column: 1em;
+        gap: 1em;
         grid-template-areas: 
             "img title"
             "img subtitle";
@@ -311,10 +338,6 @@ h3 {
         margin-right: auto;
         gap: 2em;
     }
-
-    /* .service + .service {
-        margin-left: 2em;
-    } */
 }
 
 /* about me */
