@@ -298,7 +298,7 @@ h3 {
 
 .my-services { 
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/services-bg.jpg");
+    url("img/services-bg.jpg");
     background-color: var(--clr-dark);
     background-size: cover;
     /* background-blend-mode: multiply; */
