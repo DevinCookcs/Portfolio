@@ -30,6 +30,11 @@
 
 .dark-mode {
     background: var(--dm-light);
+    columns: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
 }
 
 /* general styles */
@@ -194,6 +199,10 @@ h3 {
 .nav-link:hover {
     color: var(--clr-accent);
     text-decoration: underline;
+}
+
+.dark-mode {
+    padding: 5em;
 }
 
 .nav-toggle {

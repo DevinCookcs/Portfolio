@@ -12,9 +12,18 @@ navLinks.forEach(link => {
 });
 
 
-const darkMode = document.querySelector("body");
+// const darkMode = document.querySelector("body");
 
+// function myFunction() {
+//     var element = document.body;
+//     element.classList.toggle("dark-mode");
+// }
+
+// Get the root element
+var r = document.querySelector(':root');
+
+// Create a function for setting a variable value
 function myFunction() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
+    // Set the value of variable --blue to another value (in this case "lightblue")
+    r.style.setProperty('--clr-light', '--dm-light');
 }
