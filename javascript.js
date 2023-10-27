@@ -10,3 +10,11 @@ navLinks.forEach(link => {
         document.body.classList.remove("nav-open");
     });
 });
+
+
+const darkMode = document.querySelector("body");
+
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
