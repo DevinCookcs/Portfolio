@@ -29,12 +29,7 @@
 /* dark mode button */
 
 .dark-mode {
-    background: var(--dm-light);
-    columns: var(--clr-dark);
-    margin: 0;
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    line-height: 1.6;
+    /* change body background */
 }
 
 /* general styles */
